@@ -2,17 +2,15 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-MRTKTest2/[Ll]ibrary/*
-MRTKTest2/[Tt]emp/*
-MRTKTest2/[Oo]bj/*
-MRTKTest2/[Bb]uild/*
-MRTKTest2/[Bb]uilds/*
-MRTKTest2/[Ll]ogs/*
-MRTKTest2/[Uu]serSettings/*
-
-# MemoryCaptures can get excessive in size.
-# They also could contain extremely sensitive data
-[Mm]emoryCaptures/*
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Mm]emoryCaptures/
+!/[Ll]ibrary/*.asset
+/[Uu]serSettings/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -61,13 +59,3 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
-
-# NuGet Build Process Generated
-# This section covers files that are generated when consuming/using MRTK from NuGet
-# May not be relevant if consuming via .unitypackages
-/NuGet/*
-!/NuGet/BuildSource.proj
-/MRTKBuild/
-/MSBuild/
-/PackagesCopy/
-!/scripts/Packaging/NuGetRestoreProject.csproj
